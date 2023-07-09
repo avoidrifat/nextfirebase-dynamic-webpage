@@ -1,0 +1,76 @@
+{/* stop here */}
+
+            <form onSubmit={uploadHandler}>
+              <label>
+                <span>
+                  Header Title <span className="required">*</span>
+                </span>
+                <input
+                  onChange={(event) => {
+                    setHeaderTitle(event.target.value);
+                  }}
+                  type="text"
+                  className="input-field "
+                />
+              </label>
+              <label>
+                <span>
+                  Header Paragraph <span className="required">*</span>
+                </span>
+                <input
+                  onChange={(event) => {
+                    setParagraph(event.target.value);
+                  }}
+                  type="text"
+                  className="input-field"
+                />
+              </label>
+
+              <label>
+                <span>
+                  Email <span className="required">*</span>
+                </span>
+                <input
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
+                  type="text"
+                  className="input-field"
+                />
+              </label>
+              <label>
+                <span>
+                  Address 1 <span className="required">*</span>
+                </span>
+                <input
+                  onChange={(event) => {
+                    setAddress1(event.target.value);
+                  }}
+                  type="text"
+                  className="input-field"
+                />
+              </label>
+              <label>
+                <span>
+                  Address 2 <span className="required">*</span>
+                </span>
+                <input
+                  onChange={(event) => {
+                    setAddress2(event.target.value);
+                  }}
+                  type="text"
+                  className="input-field"
+                />
+              </label>
+
+              <label>
+                <span> </span>
+                <input type="submit" value="Submit" />
+              </label>
+              <Link
+                class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                href="/admin"
+              >
+                Back To Admin
+              </Link>
+            </form>
